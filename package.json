@@ -1,0 +1,17 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx electron .",
+    "build": "electron-builder build --win --ia32"
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "easytimer.js": "^4.3.0"
+  }
+}
