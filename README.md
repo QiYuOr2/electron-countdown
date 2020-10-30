@@ -7,3 +7,9 @@
 - `yarn install` 安装依赖
 - `yarn start` 测试应用
 - `yarn build` 打包
+
+## 功能
+
+- 18 分钟倒计时/5 秒倒计时
+- 倒计时结束后使用 Windows 原生通知提醒
+- 窗口置顶
