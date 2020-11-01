@@ -77,6 +77,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+about-window@^1.13.4:
+  version "1.13.4"
+  resolved "https://registry.npm.taobao.org/about-window/download/about-window-1.13.4.tgz#cedfd0153c4b8b54832acae6dae695e06f27f4b4"
+  integrity sha1-zt/QFTxLi1SDKsrm2uaV4G8n9LQ=
+
 ajv-keywords@^3.4.1:
   version "3.5.2"
   resolved "https://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"

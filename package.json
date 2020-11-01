@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
+  "author": "Mengyu Xu",
+  "description": "Electron倒计时应用，一个小Demo",
   "scripts": {
     "start": "npx electron .",
     "build": "electron-builder build --win --ia32"
@@ -12,6 +14,23 @@
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
+    "about-window": "^1.13.4",
     "easytimer.js": "^4.3.0"
+  },
+  "build": {
+    "appId": "com.mengyu.countdown",
+    "copyright": "Copyright (c) 2020 徐梦宇",
+    "productName": "倒计时",
+    "win": {
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "language": "2052",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico"
+    }
   }
 }

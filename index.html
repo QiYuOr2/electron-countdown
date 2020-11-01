@@ -1,17 +1,50 @@
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <style>
-    #timer-container {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
+  <link rel="stylesheet" href="./index.css" />
   <body>
-    <div id="timer-container">
-      <button id="start-work">开始18分钟倒计时</button>
-      <button id="start-test">测试5秒</button>
+    <div class="container">
+      <div id="timer-title">
+        <span>
+          <span id="close">×</span>
+          <span id="small">-</span>
+        </span>
+        <span>倒计时</span>
+      </div>
+      <div id="timer-container">
+        <select name="selectHouer" id="select-houer"></select>
+        <span class="set-label">小时</span>
+        <select name="selecMinute" id="select-minute"></select>
+        <span class="set-label">分</span>
+        <select name="selectSecond" id="select-second"></select>
+        <span class="set-label">秒</span>
+        <script>
+          for (let i = 0; i < 24; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.innerText = i.toString().padStart(2, 0);
+            document.getElementById('select-houer').appendChild(opt);
+          }
+          for (let i = 0; i < 60; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.innerText = i.toString().padStart(2, 0);
+            document.getElementById('select-minute').appendChild(opt);
+          }
+          for (let i = 0; i < 60; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.innerText = i.toString().padStart(2, 0);
+            document.getElementById('select-second').appendChild(opt);
+          }
+        </script>
+        <div style="padding-left: 0.5rem">
+          <button id="start-work">开始</button>
+        </div>
+      </div>
+      <div id="timer-container-show"></div>
+      <div id="timer-container-finish">
+        <button id="reset">还原</button>
+      </div>
     </div>
     <script src="./renderer.js"></script>
   </body>
